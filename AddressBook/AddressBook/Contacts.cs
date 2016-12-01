@@ -30,14 +30,14 @@ namespace AddressBook
         }
 
 
-        //public AdvancedNewContact(string firstName, string lastName, string cellPhone, string officePhone, string email)
-        //{
-        //    FirstName = firstName;
-        //    LastName = lastName;
-        //    CellPhone = cellPhone;
-        //    OfficePhone = officePhone;
-        //    Email = email;
-        //}
+        public Contacts(string firstName, string lastName, string cellPhone, string officePhone, string email)
+        {
+            FirstName = firstName;
+            LastName = lastName;
+            CellPhone = cellPhone;
+            OfficePhone = officePhone;
+            Email = email;
+        }
 
 
 
