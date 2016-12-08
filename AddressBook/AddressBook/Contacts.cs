@@ -6,40 +6,66 @@ using System.Threading.Tasks;
 
 namespace AddressBook
 {
+    /// <summary>
+    /// This is the Contacts class used to create a contact.
+    /// </summary>
+    /// 
     class Contacts
     {
-        public List<object> Person { get; set; }
-        public string FirstName { get; set; }
-        public string LastName { get; set; }
-        public string Email { get; set; }
-        public string HomePhone { get; set; }
-        public string CellPhone { get; set; }
-        public string OfficePhone { get; set; }
-        public string AddressLine1 { get; set; }
-        public string AddressLine2 { get; set; }
-        public string City { get; set; }
-        public string State { get; set; }
-        public int Zip { get; set; }
+        private string firstName;
 
-
-        public  Contacts(string firstName, string lastName, string officeNumber)
+        public string FirstName
         {
-            FirstName = firstName;
-            LastName = lastName;
-            OfficePhone = officeNumber;
+            get { return firstName; }
+            set { firstName = value; }
+        }
+        private string lastName;
+
+        public string LastName
+        {
+            get { return lastName; }
+            set { lastName = value; }
+        }
+        private string addressLine1;
+
+        public string AddressLine1
+        {
+            get { return addressLine1; }
+            set { addressLine1 = value; }
+        }
+        private string addressLine2;
+
+        public string AddressLine2
+        {
+            get { return addressLine2; }
+            set { addressLine2 = value; }
+        }
+        private string city;
+
+        public string City
+        {
+            get { return city; }
+            set { city = value; }
+        }
+        private string state;
+
+        public string State
+        {
+            get { return state; }
+            set { state = value; }
+        }
+        private int zip;
+
+        public int Zip
+        {
+            get { return zip; }
+            set { zip = value; }
         }
 
-
-        public Contacts(string firstName, string lastName, string cellPhone, string officePhone, string email)
+        public Contacts()
         {
-            FirstName = firstName;
-            LastName = lastName;
-            CellPhone = cellPhone;
-            OfficePhone = officePhone;
-            Email = email;
+
         }
-
-
 
     }
 }
